@@ -32,8 +32,12 @@ export default function Header(props) {
                     value={inputValue}
                     onChange={handleInputChange}
                     placeholder="Cerca..."
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                            handleSubmit(e);
+                        }
+                    }}
                 />
-                <button type="submit">Invia</button>
             </form>
         </header>
     );

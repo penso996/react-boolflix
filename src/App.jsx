@@ -26,7 +26,7 @@ function App() {
   const fetchFilmData = () => {
     axios.get(`https://api.themoviedb.org/3/search/movie?api_key=7107f13c6b8639f78e91e4d83ba1c848&query=${searchQuery}`)
       .then((res) => setFilmData(res.data.results))
-      .catch((err) => console.error("Error fetching data", err));
+      .catch((err) => console.error("Error fetching Movie data", err));
   };
 
   // FUNCTION to handle API request for TVshows
@@ -46,7 +46,7 @@ function App() {
 
   // RENDER
   return (
-    <GlobalContext.Provider value={{ filmData }}>
+    <GlobalContext.Provider value={{ filmData, tvData }}>
       <BrowserRouter>
         <Routes>
           <Route element={<DefaultLayout setSearchQuery={setSearchQuery} />}>
