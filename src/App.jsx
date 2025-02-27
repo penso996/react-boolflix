@@ -8,6 +8,7 @@ import DefaultLayout from "./page_layout/DefaultLayout"
 
 // Import pages
 import HomePage from "./pages/Homepage"
+import NotFound from "./pages/NotFound"
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
         <Route element={<DefaultLayout />} >
           {/* HomePage */}
           <Route path="/" element={<HomePage />} />
+          {/* NotFound */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter >
