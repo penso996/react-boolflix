@@ -18,8 +18,8 @@ import NotFound from "./pages/NotFound";
 function App() {
 
   // useState to handle filmData and searchQuery  
-  const [searchQuery, setSearchQuery] = useState("ritorno+al+futuro");
   const [filmData, setFilmData] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("ritorno+al+futuro");
 
   // FUNCTION to handle API request
   const fetchFilmData = () => {
