@@ -16,6 +16,7 @@ import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
 
 function App() {
+
   // useState to handle filmData and searchQuery  
   const [searchQuery, setSearchQuery] = useState("ritorno+al+futuro");
   const [filmData, setFilmData] = useState([]);
@@ -50,4 +51,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

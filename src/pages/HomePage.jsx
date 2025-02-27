@@ -2,14 +2,16 @@
 
 // Import functions from React
 import { useContext } from "react";
+
 // Import context
 import GlobalContext from "../context/GlobalContext";
 // Import page_single_components
 import FilmCard from "../page_single_components/FilmCard";
 
 export default function HomePage() {
+
     const { filmData } = useContext(GlobalContext);
-    console.log(filmData);
+
 
     // RENDER
     return (

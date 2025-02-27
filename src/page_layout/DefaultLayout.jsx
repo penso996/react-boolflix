@@ -2,11 +2,14 @@
 
 // Import functions from React
 import { Outlet } from "react-router-dom";
+
 // Import page_main_components
 import Header from "../page_main_components/Header";
 
-// Aggiungi props per ricevere setSearchQuery
-export default function DefaultLayout({ setSearchQuery }) {
+export default function DefaultLayout(props) {
+
+    const { setSearchQuery } = props;
+
     return (
         <>
             <Header setSearchQuery={setSearchQuery} />

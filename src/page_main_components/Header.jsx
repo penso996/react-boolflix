@@ -4,10 +4,12 @@
 import { useState } from "react";
 
 export default function Header(props) {
+
     const { setSearchQuery } = props;
     const [inputValue, setInputValue] = useState("");
 
-    const handleInputChange = ({ target: { value } }) => {
+    const handleInputChange = (event) => {
+        const value = event.target.value;
         setInputValue(value);
     };
 
@@ -18,9 +20,12 @@ export default function Header(props) {
         setInputValue("");
     };
 
+
+    // RENDER
     return (
         <header>
             <h1>HEADER</h1>
+
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
