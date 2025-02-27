@@ -2,7 +2,6 @@
 
 // Import functions from React
 import { useContext } from "react";
-
 // Import context
 import GlobalContext from "../context/GlobalContext";
 // Import page_single_components
