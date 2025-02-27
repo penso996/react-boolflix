@@ -24,7 +24,7 @@ export default function HomePage() {
                 )}
             <h1>SERIE TV</h1>
             {/* tv series list */}
-            {tvData.length === 0 ? (<div><h1>Non ci sono serie TV</h1></div>) :
+            {tvData.length === 0 ? (<div><h1>Non ci sono serie TV da mostrare</h1></div>) :
                 (tvData.map((tv) => (
                     <FilmCard key={tv.id} filmCardProp={tv} />))
                 )}
