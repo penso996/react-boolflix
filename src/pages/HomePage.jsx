@@ -5,22 +5,20 @@ import { useContext } from "react";
 // Import context
 import GlobalContext from "../context/GlobalContext";
 // Import page_single_components
-import FilmCard from "../page_single_components/FilmCard"
+import FilmCard from "../page_single_components/FilmCard";
 
 export default function HomePage() {
-
     const { filmData } = useContext(GlobalContext);
-    console.log(filmData)
+    console.log(filmData);
 
-
-    //RENDER
+    // RENDER
     return (
         <main>
             {/* film list */}
             {filmData.length === 0 ? (<div><h1>Non ci sono film da mostrare</h1></div>) :
                 (filmData.map((film) => (
-                    <FilmCard key={film.id} filmCardProp={film} />)))
-            }
+                    <FilmCard key={film.id} filmCardProp={film} />))
+                )}
         </main>
     );
 }
