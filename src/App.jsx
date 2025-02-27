@@ -19,18 +19,28 @@ function App() {
 
   // useState to handle filmData and searchQuery  
   const [filmData, setFilmData] = useState([]);
-  const [searchQuery, setSearchQuery] = useState("ritorno+al+futuro");
+  const [tvData, setTvData] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
-  // FUNCTION to handle API request
+  // FUNCTION to handle API request for Movies
   const fetchFilmData = () => {
     axios.get(`https://api.themoviedb.org/3/search/movie?api_key=7107f13c6b8639f78e91e4d83ba1c848&query=${searchQuery}`)
       .then((res) => setFilmData(res.data.results))
       .catch((err) => console.error("Error fetching data", err));
   };
 
+  // FUNCTION to handle API request for TVshows
+  const fetchTVData = () => {
+    axios
+      .get(`https://api.themoviedb.org/3/search/tv?api_key=7107f13c6b8639f78e91e4d83ba1c848&query=${searchQuery}`)
+      .then((res) => setTvData(res.data.results))
+      .catch((err) => console.error("Error fetching TV data", err));
+  };
+
   // useEffect to fetch data on searchQuery change
   useEffect(() => {
     fetchFilmData();
+    fetchTVData();
   }, [searchQuery]);
 
 
