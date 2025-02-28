@@ -11,17 +11,15 @@ const FilmCard = (props) => {
 
     // RENDER
     return (
-        <>
-            {/* poster */}
-            <div>
-                <img className='poster-image'
-                    src={filmCardProp.poster_path ? `https://image.tmdb.org/t/p/w300/${filmCardProp.poster_path}` : './src/assets/card_image_not_found.png'}
-                    alt={filmCardProp.title || filmCardProp.name}
-                />
-            </div>
+        <div className='film-card'>
 
-            {/* film card */}
-            <div>
+            {/* poster visible */}
+            <img className='film-card-image' src={filmCardProp.poster_path ? `https://image.tmdb.org/t/p/w300/${filmCardProp.poster_path}` : './src/assets/card_image_not_found.png'}
+                alt={filmCardProp.title || filmCardProp.name}
+            />
+
+            {/* film card on hover */}
+            <div className='film-card-info'>
                 {/* original title for Movie or TV show */}
                 <h3>{filmCardProp.title || filmCardProp.name}</h3>
 
@@ -45,7 +43,7 @@ const FilmCard = (props) => {
                     ) : filmCardProp.original_language === "fr" ? (
                         <Flag code="FR" className="flag" />
                     ) : (
-                        "altro"
+                        <h3>altra lingue</h3>
                     )}
                 </div>
 
@@ -59,7 +57,7 @@ const FilmCard = (props) => {
                 </div>
 
             </div>
-        </>
+        </div>
     );
 }
 
