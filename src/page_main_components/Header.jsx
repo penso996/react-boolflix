@@ -2,6 +2,7 @@
 
 // Import functions from React
 import { useState } from "react";
+import { NavLink } from 'react-router-dom';
 
 export default function Header(props) {
 
@@ -27,7 +28,9 @@ export default function Header(props) {
             <section className="header-container">
 
                 {/* header-logo */}
-                <img className="header-logo" src="src\assets\boolflix_logo.svg" alt="boolflix" />
+                <NavLink to="/">
+                    <img className="header-logo" src="src\assets\boolflix_logo.svg" alt="boolflix" />
+                </NavLink>
 
                 {/* header-input */}
                 <form onSubmit={handleSubmit}>
