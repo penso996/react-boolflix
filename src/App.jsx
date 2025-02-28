@@ -29,12 +29,12 @@ function App() {
       .catch((err) => console.error("Error fetching Movie data", err));
   };
 
-  // FUNCTION to handle API request for TVshows
+  // FUNCTION to handle API request for TV shows
   const fetchTVData = () => {
     axios
       .get(`https://api.themoviedb.org/3/search/tv?api_key=7107f13c6b8639f78e91e4d83ba1c848&query=${searchQuery}`)
       .then((res) => setTvData(res.data.results))
-      .catch((err) => console.error("Error fetching TV data", err));
+      .catch((err) => console.error("Error fetching TV shows data", err));
   };
 
   // useEffect to fetch data on searchQuery change
