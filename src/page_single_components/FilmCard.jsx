@@ -11,6 +11,7 @@ const FilmCard = (props) => {
     // RENDER
     return (
         <div>
+            <img src={`https://image.tmdb.org/t/p/w300/${filmCardProp.poster_path}`} alt="" />
             <h3>{filmCardProp.title || filmCardProp.name}</h3>
             <h3>{filmCardProp.original_title || filmCardProp.original_name}</h3>
             <h3>
