@@ -9,8 +9,20 @@
   box-sizing: border-box;
 }
 
+/* PAGES RULES */
+header {
+  height: 120px;
+  background-color: black;
+}
+
+/* PAGE_MAIN_COMPONENTS RULES */
+
+/* PAGE_SINGLE_COMPONENTS RULES */
+/* FilmCard.jsx */
+
 /* flag rules */
 .flag {
   height: 15px;
   width: auto;
+  border-radius: 3px;
 }
