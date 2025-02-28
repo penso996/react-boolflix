@@ -10,12 +10,48 @@
 }
 
 /* PAGES RULES */
-header {
-  height: 120px;
-  background-color: black;
-}
 
 /* PAGE_MAIN_COMPONENTS RULES */
+/* Header.jsx */
+.header-background {
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 50px;
+}
+
+.header-input {
+  padding: 4px 8px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.header-input:focus {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  border-color: #aaa;
+  font-size: 18px;
+}
+
+.header-input::placeholder {
+  font-size: 14px;
+}
 
 /* PAGE_SINGLE_COMPONENTS RULES */
 /* FilmCard.jsx */

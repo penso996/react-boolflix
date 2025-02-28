@@ -23,22 +23,29 @@ export default function Header(props) {
 
     // RENDER
     return (
-        <header>
-            <h1>HEADER</h1>
+        <header className="header-background">
+            <section className="header-container">
 
-            <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    value={inputValue}
-                    onChange={handleInputChange}
-                    placeholder="Cerca..."
-                    onKeyDown={(e) => {
-                        if (e.key === 'Enter') {
-                            handleSubmit(e);
-                        }
-                    }}
-                />
-            </form>
+                {/* header-logo */}
+                <img className="header-logo" src="src\assets\boolflix_logo.svg" alt="boolflix" />
+
+                {/* header-input */}
+                <form onSubmit={handleSubmit}>
+                    <input
+                        className="header-input"
+                        type="text"
+                        value={inputValue}
+                        onChange={handleInputChange}
+                        placeholder="Cerca un Film o serie TV"
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter') {
+                                handleSubmit(e);
+                            }
+                        }}
+                    />
+                </form>
+
+            </section>
         </header>
     );
 }
