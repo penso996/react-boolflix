@@ -16,18 +16,24 @@ export default function HomePage() {
     // RENDER
     return (
         <main>
+
             <h1>FILM</h1>
-            {/* film list */}
-            {filmData.length === 0 ? (<div><h1>Non ci sono film da mostrare</h1></div>) :
-                (filmData.map((film) => (
-                    <FilmCard key={film.id} filmCardProp={film} />))
-                )}
+            <section className="movies-section">
+                {/* film list */}
+                {filmData.length === 0 ? (<div><h1>Non ci sono film da mostrare</h1></div>) :
+                    (filmData.map((film) => (
+                        <FilmCard key={film.id} filmCardProp={film} />))
+                    )}
+            </section>
+
             <h1>SERIE TV</h1>
-            {/* tv series list */}
-            {tvData.length === 0 ? (<div><h1>Non ci sono serie TV da mostrare</h1></div>) :
-                (tvData.map((tv) => (
-                    <FilmCard key={tv.id} filmCardProp={tv} />))
-                )}
+            <section className="movies-section">
+                {/* tv series list */}
+                {tvData.length === 0 ? (<div><h1>Non ci sono serie TV da mostrare</h1></div>) :
+                    (tvData.map((tv) => (
+                        <FilmCard key={tv.id} filmCardProp={tv} />))
+                    )}
+            </section>
         </main>
     );
 }
