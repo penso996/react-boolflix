@@ -20,7 +20,7 @@ export default function HomePage() {
             <h1>FILM</h1>
             <section className="movies-section">
                 {/* film list */}
-                {filmData.length === 0 ? (<div><h2>Cerca un Film</h2></div>) :
+                {filmData.length === 0 ? (<h2>Cerca un Film</h2>) :
                     (filmData.map((film) => (
                         <FilmCard key={film.id} filmCardProp={film} />))
                     )}
@@ -29,7 +29,7 @@ export default function HomePage() {
             <h1>SERIE TV</h1>
             <section className="movies-section">
                 {/* tv series list */}
-                {tvData.length === 0 ? (<div><h2>Cerca una Serie TV</h2></div>) :
+                {tvData.length === 0 ? (<h2>Cerca una Serie TV</h2>) :
                     (tvData.map((tv) => (
                         <FilmCard key={tv.id} filmCardProp={tv} />))
                     )}
