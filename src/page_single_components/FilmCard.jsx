@@ -15,7 +15,7 @@ const FilmCard = (props) => {
             {/* poster */}
             <div>
                 <img
-                    src={`https://image.tmdb.org/t/p/w300/${filmCardProp.poster_path}`}
+                    src={filmCardProp.poster_path ? `https://image.tmdb.org/t/p/w300/${filmCardProp.poster_path}` : './src/assets/card_image_not_found.png'}
                     alt={filmCardProp.title || filmCardProp.name}
                 />
             </div>

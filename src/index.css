@@ -13,7 +13,7 @@
 /* HomePage.jsx */
 main {
   width: 100%;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   background-color: rgb(34, 34, 34);
 }
 
@@ -21,7 +21,7 @@ main {
 /* Header.jsx */
 .header-background {
   height: 100px;
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(10, 10, 10);
   display: flex;
   justify-content: center;
   align-items: center;
