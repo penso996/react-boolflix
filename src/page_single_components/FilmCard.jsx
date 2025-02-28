@@ -25,11 +25,11 @@ const FilmCard = (props) => {
 
                 {/* italian title for Movie (if different from original title) */}
                 {filmCardProp.original_title !== filmCardProp.title && (
-                    <h3>{filmCardProp.original_title}</h3>
+                    <h4>{filmCardProp.original_title}</h4>
                 )}
                 {/* italian title for TV shows (if different from original title) */}
                 {filmCardProp.original_name !== filmCardProp.name && (
-                    <h3>{filmCardProp.original_name}</h3>
+                    <h4>{filmCardProp.original_name}</h4>
                 )}
 
                 {/* language flag */}
