@@ -10,6 +10,8 @@ export default function DefaultLayout(props) {
 
     const { setSearchQuery } = props;
 
+
+    // RENDER
     return (
         <>
             <Header setSearchQuery={setSearchQuery} />
