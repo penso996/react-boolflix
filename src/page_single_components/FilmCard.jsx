@@ -43,7 +43,7 @@ const FilmCard = (props) => {
                     ) : filmCardProp.original_language === "fr" ? (
                         <Flag code="FR" className="flag" />
                     ) : (
-                        <h3>altra lingue</h3>
+                        <h5>lingua straniera</h5>
                     )}
                 </div>
 
