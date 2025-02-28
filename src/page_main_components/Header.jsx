@@ -36,7 +36,7 @@ export default function Header(props) {
                         type="text"
                         value={inputValue}
                         onChange={handleInputChange}
-                        placeholder="Cerca un Film o serie TV"
+                        placeholder="Cerca un Film o serie TV..."
                         onKeyDown={(e) => {
                             if (e.key === 'Enter') {
                                 handleSubmit(e);
