@@ -24,7 +24,7 @@ function App() {
 
   // FUNCTION to handle API request for Movies
   const fetchFilmData = () => {
-    axios.get(`https://api.themoviedb.org/3/search/movie?api_key=7107f13c6b8639f78e91e4d83ba1c848&query=${searchQuery}`)
+    axios.get(`https://api.themoviedb.org/3/search/movie?api_key=7107f13c6b8639f78e91e4d83ba1c848&language=it-IT&query=${searchQuery}`)
       .then((res) => setFilmData(res.data.results))
       .catch((err) => console.error("Error fetching Movie data", err));
   };
@@ -32,7 +32,7 @@ function App() {
   // FUNCTION to handle API request for TV shows
   const fetchTVData = () => {
     axios
-      .get(`https://api.themoviedb.org/3/search/tv?api_key=7107f13c6b8639f78e91e4d83ba1c848&query=${searchQuery}`)
+      .get(`https://api.themoviedb.org/3/search/tv?api_key=7107f13c6b8639f78e91e4d83ba1c848&language=it-IT&query=${searchQuery}`)
       .then((res) => setTvData(res.data.results))
       .catch((err) => console.error("Error fetching TV shows data", err));
   };
