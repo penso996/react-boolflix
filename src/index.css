@@ -10,16 +10,25 @@
 }
 
 /* PAGES RULES */
+/* HomePage.jsx */
+main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: rgb(34, 34, 34);
+}
 
 /* PAGE_MAIN_COMPONENTS RULES */
 /* Header.jsx */
 .header-background {
   height: 100px;
-  background-color: black;
+  background-color: rgb(15, 15, 15);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5),
+    inset 0 -10px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 100;
 }
 
 .header-container {
