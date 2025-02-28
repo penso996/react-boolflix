@@ -19,7 +19,7 @@ main {
 }
 
 h1 {
-  padding: 15px;
+  padding: 20px;
   font-size: 50px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   color: rgb(7, 7, 7);
@@ -29,10 +29,10 @@ h1 {
 /* HomePage.jsx */
 .movies-section {
   width: 90%;
+  height: 480px;
+  align-items: center;
   display: flex;
   overflow: scroll;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* PAGE_MAIN_COMPONENTS RULES */
