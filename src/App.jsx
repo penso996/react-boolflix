@@ -17,7 +17,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
 
-  // useState to handle filmData and searchQuery  
+  // useState to handle filmData/tvData and searchQuery  
   const [filmData, setFilmData] = useState([]);
   const [tvData, setTvData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
