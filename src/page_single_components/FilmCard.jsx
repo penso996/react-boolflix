@@ -16,7 +16,11 @@ const FilmCard = (props) => {
                 alt={filmCardProp.title || filmCardProp.name} />
             {/* card */}
             <h3>{filmCardProp.title || filmCardProp.name}</h3>
-            <h3>{filmCardProp.original_title || filmCardProp.original_name}</h3>
+            <h3>
+                {filmCardProp.original_title === filmCardProp.original_name
+                    ? filmCardProp.original_title
+                    : filmCardProp.original_title || filmCardProp.original_name}
+            </h3>
             <h3>
                 <h3>
                     {filmCardProp.original_language === "en" ? <Flag code="GB" className='flag' /> :
