@@ -17,7 +17,7 @@ export default function HomePage() {
     return (
         <main>
 
-            <h1>FILM</h1>
+            <h1>Film</h1>
             <section className="movies-section">
                 {/* film list */}
                 {filmData.length === 0 ? (<h2>Cerca un Film...</h2>) :
@@ -26,7 +26,7 @@ export default function HomePage() {
                     )}
             </section>
 
-            <h1>SERIE TV</h1>
+            <h1>Serie TV</h1>
             <section className="movies-section">
                 {/* tv series list */}
                 {tvData.length === 0 ? (<h2>Cerca una Serie TV...</h2>) :
