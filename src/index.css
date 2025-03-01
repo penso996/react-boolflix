@@ -100,7 +100,7 @@ h2 {
 
 @keyframes fadeInHeader {
   to {
-    opacity: 0.9;
+    opacity: 0.95;
     transform: scale(1);
   }
 }
